@@ -1,0 +1,31 @@
+{
+  "name": "sc-vr-theme",
+  "version": "0.0.1",
+  "description": "Configurable bootstrap layout plugin for Saltcorn.com",
+  "main": "index.js",
+  "dependencies": {
+    "@saltcorn/markup": "^0.1.2",
+    "@saltcorn/data": "^0.1.2"
+  },
+  "author": "VS",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "publishConfig": {
+      "access": "public"
+    },    
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "rules": {
+      "no-unused-vars": "off",
+      "no-case-declarations": "off",
+      "no-empty": "warn",
+      "no-fallthrough": "warn"
+    }
+  }
+}
