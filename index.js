@@ -450,7 +450,7 @@ const {
   
   module.exports = {
     sc_plugin_api_version: 1,
-    plugin_name: "tabler",
+    plugin_name: "sc-vr-theme",
     configuration_workflow,
     layout,
   };
