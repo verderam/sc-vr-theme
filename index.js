@@ -248,18 +248,11 @@ const {
       <link rel="stylesheet" href="/plugins/public/sc-vr-theme/bootstrap.min.css">
       ${headersInHead(headers)}
       <title>${text(title)}</title>
-    </head>
-    <body ${bodyAttr}>
-    ${body}
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
-     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
-     crossorigin="anonymous"></script>
-    <script src="/plugins/public/sc-vr-theme/bootstrap.bundle.min.js"></script>
-  
-      ${headersInBody(headers)}
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="/plugins/public/sc-vr-theme/bootstrap.bundle.min.js"></script>      
       <style>
         .form-group {
           margin-bottom: 1rem;
@@ -268,7 +261,11 @@ const {
           margin-top: -8px;
           margin-right: 3px;
         }
-      </style>
+      </style>      
+    </head>
+    <body ${bodyAttr}>
+    ${body}
+      ${headersInBody(headers)}
   </body>
   </html>`;
   
