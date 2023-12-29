@@ -248,11 +248,10 @@ const {
       <link rel="stylesheet" href="/plugins/public/sc-vr-theme/bootstrap.min.css">
       ${headersInHead(headers)}
       <title>${text(title)}</title>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
-      crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="/plugins/public/sc-vr-theme/bootstrap.bundle.min.js"></script>      
+      <script src="/plugins/public/sc-vr-theme/htmx.min.js"></script>      
       <style>
         .form-group {
           margin-bottom: 1rem;
@@ -263,7 +262,7 @@ const {
         }
       </style>      
     </head>
-    <body ${bodyAttr}>
+    <body ${bodyAttr} hx-boost="true">
     ${body}
       ${headersInBody(headers)}
   </body>
